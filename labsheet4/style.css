@@ -1,0 +1,102 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+}
+nav a:hover {
+	color: #ffcc00;
+}
+main {
+	background-color: #eee;
+	padding: 50px;
+	text-align: center;
+}
+
+main h2 {
+	color: #333;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+main p {
+	color: #666;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+main img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px #333;
+}
+
+/* Menu section styles */
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #fff;
+	padding: 50px;
+}
+.menu-item {
+	flex-basis: 30%;
+	margin-bottom: 50px;
+	box-shadow: 0px 0px 10px #999;
+	padding: 20px;
+	text-align: center;
+}
+.menu-item img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.menu-item h3 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.menu-item p {
+	color: #666;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+footer p {
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Gradient styles */
+header {
+	background: linear-gradient(to bottom, #333 0%, #666 100%);
+}
+nav a:hover {
+	background: linear-gradient(to bottom, #ffcc00 0%, #ff9900 100%);
+}
+section {
+	background: radial-gradient(circle, #fff 0%, #eee 100%);
+}
+.menu-item:hover {
+	background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+	transform: translateY(-5px);
+}
+footer {
+	background: linear-gradient(to bottom, #666 0%, #333 100%);
+}

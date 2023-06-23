@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Program 4</title>
+<script
+src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState } = React;
+function Calculator() {
+const [firstNumber, setFirstNumber] = useState(0);
+const [secondNumber, setSecondNumber] = useState(0);
+const [result, setResult] = useState(0);
+return (
+<>
+<h1>Calculator</h1>
+<input type='number' value={firstNumber} onChange={(e) =>
+setFirstNumber(parseInt(e.target.value))} />
+<input type='number' value={secondNumber} onChange={(e) =>
+setSecondNumber(parseInt(e.target.value))} />
+<button onClick={() => setResult(firstNumber +
+secondNumber)}>Add</button>
+<button onClick={() => setResult(firstNumber -
+secondNumber)}>Subtract</button>
+<button onClick={() => setResult(firstNumber *
+secondNumber)}>Multiply</button>
+<button onClick={() => setResult(firstNumber /
+secondNumber)}>Divide</button>
+<h2>Result: {result}</h2>
+</>
+);
+}
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Calculator />);
+</script>
+</body>
+</html>
